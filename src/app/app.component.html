@@ -1,0 +1,57 @@
+<!-- Background  -->
+<div class="bg"> 
+</div>
+
+
+
+
+
+<div class="contentArea">
+	<!-- title  -->
+	<div class="title">
+		<h1>Text To Hex String</h1>
+	</div>
+
+	
+	<!-- input area -->
+	<div class="inputArea">
+		<nz-input-group nzSearch [nzSuffix]="suffixIconButton">
+			<input type="text" nz-input  nzSize="large" [(ngModel)]="inputText" placeholder="input text here">
+		</nz-input-group>
+		<ng-template #suffixIconButton>
+			<button nz-button nzType="primary" nzSearch (click)="genHexStr()">
+				Gen<i nz-icon type="rocket" theme="outline"></i>
+			</button>
+		</ng-template>
+	</div>
+
+
+	<!-- gen result area -->
+	<div class="card-container">
+      <nz-tabset [nzTabPosition]="'top'" [nzType]="'card'"> 
+
+        <nz-tab nzTitle="Hex String">
+        	<p>{{hexString}}</p>
+        </nz-tab>
+
+
+        <nz-tab nzTitle="Hex String For ZPL">
+        	<p>{{ZPLHexString}}</p>
+        </nz-tab> 
+      </nz-tabset>
+    </div>
+
+
+	<!-- footer -->
+	<div class="footer">
+		<p>
+			Hugo Zeng / openopen114[at]gmail.com 
+			<span>
+				<i nz-icon [type]="'smile'" [theme]="'twotone'"></i>
+			</span>
+		</p>
+	</div>
+
+</div>
+
+
