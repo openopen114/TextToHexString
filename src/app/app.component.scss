@@ -66,6 +66,18 @@
 	}
 
 
+
+	@media screen and (max-width: 700px){
+		.inputArea, .card-container{
+			width: 85vw;
+		}
+
+		.title h1{
+			font-size: 38px;
+		}
+	}
+
+
 }
 
 
@@ -99,4 +111,10 @@
     border-color: #fff;
     background: #fff;
   }
+
+
+
+
+
+
 
